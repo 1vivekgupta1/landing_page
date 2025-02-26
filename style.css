@@ -1,0 +1,117 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    font-family:  Roboto;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  header{
+    background-color: #1f2937;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+    /* background-color: aqua; */
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+header h2{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    background-color: azure;
+    /* display: block; */
+    padding: 20px;
+    /* margin: 60px; */
+    margin-right: 120px;
+    height: 250px;
+    width: 250px;
+}
+.header-section section h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+.header-section section{
+    padding: 10px;
+    margin: 60px;
+    margin-left: 100px;
+}
+.header-section section p{
+    color: #e5e7eb;
+
+}
+.header-section section button{
+    color: #f9faf8;
+    background-color: #3882f6;
+    border-radius: 8px;
+    border:1px solid #3882f6 ;
+    width: 100px;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #3882f6;
+    border-radius: 10px;
+}
+.boxes{
+    display: flex;
+    justify-items: flex-end;
+    /* justify-content: space-evenly; */
+    /* flex-shrink: 6; */
+   
+}
